@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>َURL Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+
+    <form class="box" action="{{ url_for('predict')}}" method="post">
+      <h1>َURL Predictor</h1>
+      <input type="text" name="url" placeholder="Enter your َURL ">
+      <input type="submit" name="" value="Submit">
+      <h2>{{prediction_text}} </h2>
+    </form>
+
+
+
+  </body>
+</html>
