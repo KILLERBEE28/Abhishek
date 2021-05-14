@@ -256,7 +256,7 @@ def predict():
     input_arr=input_arr.reshape(1,-1)
 
     #Loading my Classifier pickle file on which the dataset is trained upon
-    pickle_in=open(r'RandomForestClassifier.pkl','rb')
+    pickle_in=open('RandomForestClassifier.pkl','rb')
     rf=pickle.load(pickle_in)
 
     prediction=rf.predict(input_arr)
